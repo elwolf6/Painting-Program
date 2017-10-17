@@ -20,8 +20,10 @@ function draw() {
 	textSize(120)
 	text("elwolf's painting Program",210,100)
 	rect(0,130,10000,50)
-	if (mouseIsPressed) {
-		ellipse(mouseX,mouseY,BrushSize,BrushSize);
-	}
 }
 
+function mouseDragged() 
+{ 
+	strokeWeight(10);
+	line(mouseX, mouseY, BrushSize, BrushSize);
+}
