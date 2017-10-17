@@ -4,7 +4,7 @@ var brushSizeSlider;
 function setup() {
  	createCanvas(windowWidth, windowHeight);
 	c = color(0);
-	brushSizeSlider = createSlider(10, 72, 36);
+	brushSizeSlider = createSlider(10, 200, 36);
   	brushSizeSlider.position(25, 25);
 }
  
