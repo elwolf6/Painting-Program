@@ -1,13 +1,16 @@
 var c;
+var brushSizeSlider;
 
 function setup() {
  	createCanvas(windowWidth, windowHeight);
 	c = color(0);
+	brushSizeSlider = createSlider(10, 72, 36);
+  	brushSizeSlider.position(25, 25);
 }
  
 function draw()
 {
-	BrushSize = 10
+	BrushSize = brushSizeSlider.value()
 	fill(0,0,0);
 	noStroke()
 	textSize(40)
