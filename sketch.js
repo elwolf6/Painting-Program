@@ -10,7 +10,7 @@ function setup() {
 }
 
 function draw() {
-	BrushSize = 1
+	BrushSize = 100
 	fill(0,0,0);
 	noStroke()
 	textSize(40)
@@ -25,16 +25,3 @@ function draw() {
 	}
 }
 
-function keyPressed() {
-  if (keyCode == 0x52) {
-	noStroke();
-    fill(255,255,255);
-	rect(0,0,1920,1080);
-  }
-  if (keyCode == 0x45) {
-	noStroke();
-    fill(255,255,255);
-	rect(mouseX,mouseY,30,30);
-  }
-  return false; // prevent default
-}
