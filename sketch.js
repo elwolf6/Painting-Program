@@ -16,7 +16,7 @@ function draw()
 	text(BrushSize,210,250)
 	textSize(120)
 	text("elwolf's painting Program",210,100)
-	rect(0,130,height,50)
+	rect(0,130,10000,50)
 }
  
 function mouseDragged() 
