@@ -13,7 +13,6 @@ function draw()
 	BrushSize = brushSizeSlider.value()
 	fill(0,0,0);
 	noStroke()
-	textFont(Georgia)
 	textSize(40)
 	text("Brush Size:",5,40)
 	textSize(40)
@@ -25,7 +24,10 @@ function draw()
  
 function mouseDragged() 
 {
-		strokeWeight(BrushSize);
-		stroke(c);
-		line(mouseX, mouseY, pmouseX, pmouseY);
+    if(mouseY > 180)
+    {
+	strokeWeight(BrushSize);
+	stroke(c);
+	line(mouseX, mouseY, pmouseX, pmouseY);
+    }
 }
