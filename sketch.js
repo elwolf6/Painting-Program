@@ -1,5 +1,8 @@
+var c;
+
 function setup() {
  	createCanvas(windowWidth, windowHeight);
+	c = color(0);
 }
  
 function draw()
@@ -15,5 +18,6 @@ function draw()
 function mouseDragged() 
 { 
 	strokeWeight(10);
+	stroke(c);
 	line(mouseX, mouseY, pmouseX, pmouseY);
 }
