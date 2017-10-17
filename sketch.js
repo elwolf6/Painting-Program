@@ -19,12 +19,12 @@ function draw()
 	text(BrushSize,5,70)
 	textSize(120)
 	text("Luis's Painting Program",210,100)
-	rect(0,130,10000,50)
+	rect(0,120,10000,55)
 }
  
 function mouseDragged() 
 {
-  if(mouseY > 180)
+  if(mouseY > 220)
   {
 		strokeWeight(BrushSize);
 		stroke(c);
