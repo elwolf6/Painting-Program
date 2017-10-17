@@ -12,6 +12,7 @@ function draw()
 	fill(200);
 	rect(0, 0, width, 250);
 	fill(0);
+	textSize(40)
 	text("elwolf's awesome painting program", 100, 150);
 }
  
