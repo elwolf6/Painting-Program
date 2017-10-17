@@ -20,10 +20,6 @@ function draw() {
 	textSize(120)
 	text("elwolf's painting Program",210,100)
 	rect(0,130,10000,50)
-	if (keyIsDown(UP_ARROW))
-    		BrushSize = BrushSize + 10;
-	if (keyIsDown(DOWN_ARROW))
-    		BrushSize = BrushSize - 10;
 	if (mouseIsPressed) {
 		ellipse(mouseX,mouseY,BrushSize,BrushSize);
 	}
