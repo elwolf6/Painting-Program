@@ -20,7 +20,7 @@ function draw()
 	textSize(40)
 	text(BrushSize,5,70)
 	textSize(120)
-	text("elwolf's painting Program",210,100)
+	text("Luis's painting Program",210,100)
 	rect(0,130,10000,50)
 	if(mouseIsPressed || mdrag == 0)
 	{
