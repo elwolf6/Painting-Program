@@ -31,3 +31,12 @@ function mouseDragged()
 		line(mouseX, mouseY, pmouseX, pmouseY);
   }
 }
+
+function keyPressed()
+{
+	if(key == 'e' || key == 'E')
+	{
+		c = color(255, 255, 255);
+	}
+}
+
