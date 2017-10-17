@@ -24,7 +24,7 @@ function draw()
 	rect(0,130,10000,50)
 	if(mouseIsPressed || mdrag == 0)
 	{
-		c = color(255, 0, 0);
+		ellipse(mouseX,mouseY,BrushSize,BrushSize)
 	}
 }
  
