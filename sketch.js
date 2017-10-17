@@ -13,6 +13,7 @@ function draw()
 	BrushSize = brushSizeSlider.value()
 	fill(0,0,0);
 	noStroke()
+	textFont(Georgia)
 	textSize(40)
 	text("Brush Size:",5,40)
 	textSize(40)
