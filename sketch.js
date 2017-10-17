@@ -24,7 +24,7 @@ function draw()
  
 function mouseDragged() 
 {
-  if(mouseY > 220)
+  if(mouseY > 210)
   {
 		strokeWeight(BrushSize);
 		stroke(c);
