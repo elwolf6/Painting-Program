@@ -10,7 +10,7 @@ function setup() {
 }
 
 function draw() {
-	BrushSize = 100
+	BrushSize = 1000
 	fill(0,0,0);
 	noStroke()
 	textSize(40)
