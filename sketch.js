@@ -7,7 +7,7 @@ function setup() {
  
 function draw()
 {
-	BrushSize = 30
+	BrushSize = 10
 	fill(0,0,0);
 	noStroke()
 	textSize(40)
@@ -21,7 +21,7 @@ function draw()
  
 function mouseDragged() 
 { 
-	strokeWeight(10);
+	strokeWeight(BrushSize);
 	stroke(c);
 	line(mouseX, mouseY, pmouseX, pmouseY);
 }
