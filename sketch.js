@@ -1,4 +1,5 @@
 var c;
+var mdrag;
 var brushSizeSlider;
 
 function setup() {
@@ -21,12 +22,15 @@ function draw()
 	textSize(120)
 	text("elwolf's painting Program",210,100)
 	rect(0,130,10000,50)
-	if (mouseIsPressed)
-    		ellipse(mouseX, mouseY, BrushSize, BrushSize);
+	if(mouseIsPressed || mdrag == 0)
+	{
+		c = color(255, 0, 0);
+	}
 }
  
 function mouseDragged() 
-{ 
+{
+	mdrag = 1
 	strokeWeight(BrushSize);
 	stroke(c);
 	line(mouseX, mouseY, pmouseX, pmouseY);
