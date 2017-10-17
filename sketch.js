@@ -7,13 +7,16 @@ function setup() {
  
 function draw()
 {
-	// display instructions
-	noStroke();
-	fill(200);
-	rect(0, 0, width, 250);
-	fill(0);
+	BrushSize = 30
+	fill(0,0,0);
+	noStroke()
 	textSize(40)
-	text("elwolf's awesome painting program", 100, 150);
+	text("Brush Size:",210,210)
+	textSize(40)
+	text(BrushSize,210,250)
+	textSize(120)
+	text("elwolf's painting Program",210,100)
+	rect(0,130,10000,50)
 }
  
 function mouseDragged() 
