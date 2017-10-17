@@ -25,5 +25,5 @@ function draw() {
 function mouseDragged() 
 { 
 	strokeWeight(10);
-	line(mouseX, mouseY, BrushSize, BrushSize);
+	line(mouseX, mouseY, pmouseX, pmouseY);
 }
