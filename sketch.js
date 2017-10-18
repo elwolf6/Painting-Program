@@ -7,7 +7,7 @@ function setup() {
   c = color(0);
   eraser = 0
   brushSizeSlider = createSlider(1, 100, 10);
-  brushSizeSlider.position(300, 20);
+  brushSizeSlider.position(300, 15);
 }
 
 function draw() {
