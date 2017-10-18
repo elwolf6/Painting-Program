@@ -7,21 +7,30 @@ function setup() {
   c = color(0);
   eraser = 0
   brushSizeSlider = createSlider(1, 100, 10);
-  brushSizeSlider.position(5, 80);
+  brushSizeSlider.position(300, 20);
 }
 
 function draw() {
   BrushSize = brushSizeSlider.value()
-  fill(0, 0, 0);
+  fill(200);
+  strokeWeight(0);
+  rect(0, 0, width, 55)
+  fill(0)
   noStroke()
   textSize(40)
   text("Brush Size:", 5, 40)
-  text("Tool:", 1500, 40)
-  textSize(40)
-  text(BrushSize, 5, 70)
-  textSize(120)
-  text("Luis's Painting Program", 210, 100)
-  rect(0, 120, 10000, 55)
+  text(BrushSize, 220, 40)
+  text("Tool:", 1400, 40)
+  if (eraser == 1) {
+    strokeWeight(0);
+    textSize(40)
+    text("Eraser", 1500, 40)
+  }
+  if (eraser === 0) {
+    strokeWeight(0);
+    textSize(40)
+    text("Brush", 1500, 40)
+  }
 }
 
 function mouseDragged() {
@@ -29,14 +38,6 @@ function mouseDragged() {
     strokeWeight(BrushSize);
     stroke(c);
     line(mouseX, mouseY, pmouseX, pmouseY);
-  }
-  if (eraser == 1) {
-    textSize(40)
-    text("Eraser", 1500, 70)
-  }
-  if (eraser === 0) {
-    textSize(40)
-    text("Brush", 1500, 70)
   }
 }
 
