@@ -34,11 +34,9 @@ function draw() {
 }
 
 function mouseDragged() {
-  if (mouseY > 65) {
     strokeWeight(BrushSize);
     stroke(c);
     line(mouseX, mouseY, pmouseX, pmouseY);
-  }
 }
 
 function keyPressed() {
