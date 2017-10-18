@@ -14,7 +14,7 @@ function draw() {
   BrushSize = brushSizeSlider.value()
   fill(200);
   strokeWeight(0);
-  rect(0, 0, width, 55)
+  rect(0, 0, width, 81)
   fill(0)
   noStroke()
   textSize(40)
