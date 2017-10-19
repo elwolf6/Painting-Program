@@ -1,6 +1,8 @@
 var c;
 var brushSizeSlider;
 var eraser;
+var isBrushClicked;
+var isEraserClicked;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -11,11 +13,17 @@ function setup() {
 }
 
 function draw() {
+  var distanceB = dist(mouseX, mouseY, 1400, 50);
+  var distanceE = dist(mouseX, mouseY, 1430, 50); 
   BrushSize = brushSizeSlider.value()
   fill(200);
   strokeWeight(0);
   rect(0, 0, width, 81)
   fill(0)
+  //Buttons
+  fill(0);
+  rect(1400, 50, 25, 25);
+  rect(1430, 50, 25, 25);
   noStroke()
   textSize(40)
   text("Brush Size:", 5, 40)
@@ -30,6 +38,30 @@ function draw() {
     strokeWeight(0);
     textSize(40)
     text("Brush", 1500, 40)
+  }
+  if(distanceB < 50)
+  {
+    isBrushClicked = true;
+  } else {
+    isBrushClicked = false;
+  }
+  if(distanceE < 50)
+  {
+    isEraserClicked = true;
+  } else {
+    isEraserClicked = false;
+  }
+}
+
+function mousePressed()
+{
+  if(isBrushClicked === true)
+  {
+    eraser = 0
+  }
+  if(isEraserClicked === true)
+  {
+    eraser = 1
   }
 }
 
