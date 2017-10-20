@@ -3,6 +3,13 @@ var brushSizeSlider;
 var eraser;
 var isBrushClicked;
 var isEraserClicked;
+var ErPic;
+var BrPic;
+
+function preload()  {
+  ErPic = "assets/eraser.jpg"
+  ErBrush = "assets/brush.jpg"
+}
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
